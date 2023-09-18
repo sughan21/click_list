@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rock Salt", cursive;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #00ff9e;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2rem;
+  text-align: center;
+  color: #1e00ff;
+}
+
+.container {
+  max-width: 20.5rem;
+  margin: 50px auto;
+  background-color: #e1ff00;
+  border-radius: 5px;
+  border: 0.5px solid #333;
+  margin-top: 7rem;
+}
+
+.container .listitem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.container .listitem:last-child {
+  border-bottom: 0;
+}
+.container .listitem input:checked + p {
+  background-color: #ff0061;
+  text-decoration: line-through;
+}
+.container .listitem input:checked {
+  background-color: #ff0061;
+}
+.container .listitem input[type="checkbox"] {
+  margin: 20px;
+}
+.container .listitem p {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  flex: 1;
+  border-left: 1px solid #333;
+}
